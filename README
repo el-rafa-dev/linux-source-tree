@@ -34,6 +34,6 @@ make menuconfig
 e para iniciar o build do kernel usaremos:
 
 ```
-make -p$(nproc)
+make -j$(nproc)
 ```
 
