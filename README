@@ -16,3 +16,21 @@ several of them using the reStructuredText markup notation.
 Please read the Documentation/process/changes.rst file, as it contains the
 requirements for building and running the kernel, and information about
 the problems which may result by upgrading your kernel.
+
+Gerar o kernel (bzImage)
+
+para iniciarmos, entraremos na pasta do linux: ```cd linux```
+
+em seguida executaremos os seguintes comandos:
+```
+make defconfig
+
+make menuconfig
+```
+
+e para iniciar o build do kernel usaremos:
+
+```
+make -p$(nproc)
+```
+
